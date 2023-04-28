@@ -1,23 +1,19 @@
 #include "sort.h"
-
 /**
  * insertion_sort_list - sort array with insertion method
  * @list: a duble linked list
  * Describtion: prints the list after each swap
- *
  */
-
 void insertion_sort_list(listint_t **list)
 {
 	listin_t *head, *left, *right, aux1, aux2;
 
 	if (list == NULL || *list == NULL)
 		return;
-
 	head = *list;
 	while (head != NULL)
-	{right = head, left = head->prev, aux1 =head;
-		while (aux1 && aux1-prev)
+	{right = head, left = head->prev, aux1 = head;
+		while (aux1 && aux1->prev)
 		{right = aux1, left = aux1->prev;
 			if (left->n > right->n)
 			{
